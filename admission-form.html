@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admission Form</title>
+</head>
+
+<body>
+
+    <br><br><br><br>
+    <h1 align="center" style="color: palegreen;"><u>Admission Form</u></h1>
+    <br><br>
+    
+    <form action="admission-insert.php" method="post">
+
+	<table align="center">
+        <tr>
+            <th>
+                <label>Your Name : </label>
+            </th>
+            <td colspan="4">
+                <input type="text" name="yname" size="46" placeholder="Enter your your name" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Father Name : </label>
+            </th>
+            <td colspan="4">
+                <input type="text" name="fname" size="46" placeholder="Enter your father name" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>CNIC : </label>
+            </th>
+            <td colspan="4">
+                <input type="text" name="nic" size="46" placeholder="Enter your cnic number" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Gender : </label>
+            </th>
+            <td colspan="2">
+                <input type="radio" name="r1" value="Male" >Male
+            </td>
+            <td colspan="2">
+                <input type="radio" name="r1" value="Female" >Female
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Email : </label>
+            </th>
+            <td colspan="4">
+                <input type="text" name="email" size="46" placeholder="Enter your email address" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Contact No : </label>
+            </th>
+            <td colspan="4">
+                <input type="text" name="no" size="46" placeholder="Enter your contact no" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Address : </label>
+            </th>
+            <td colspan="4">
+                <input type="text" name="add" size="46" placeholder="Enter your complete address" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Skill : </label>
+            </th>
+            <td>
+                <input type="checkbox" name="ch[]" value="Mathematics" >Mathematics
+            </td>
+            <td>
+                <input type="checkbox" name="ch[]" value="Writing" >Writing
+            </td>
+            <td>
+                <input type="checkbox" name="ch[]" value="Leadership" >Leadership
+            </td>
+            <td>
+                <input type="checkbox" name="ch[]" value="Creativity" >Creativity
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Province : </label>
+            </th>
+            <td colspan="4">
+                <select name="pro">
+                    <option>Select Option</option>
+                    <option>Punjab</option>
+                    <option>Sindh</option>
+                    <option>Balochistan</option>
+                    <option>K-P-K</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>City : </label>
+            </th>
+            <td colspan="4">
+                <select name="city">
+                    <option>Select Option</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                    <option>Karachi</option>
+                    <option>Sialkot</option>
+                    <option>Multan</option>
+                    <option>Okara</option>
+                    <option>Rawalpindi</option>
+                    <option>Faisalabad</option>
+                    <option>Quetta</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label>Degree : </label>
+            </th>
+            <td colspan="4">
+                <select name="deg">
+                    <option>Select Option</option>
+                    <option>BSCS</option>
+                    <option>BSSE</option>
+                    <option>BBA</option>
+                    <option>BSIT</option>
+                    <option>BSC</option>
+                    <option>BA</option>
+                    <option>MSCS</option>
+                    <option>MBA</option>
+                    <option>MSIT</option>
+                    <option>MSC</option>
+                    <option>MA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="reset" value="Reset" style="float:right; background-color: steelblue; width: 80px; height: 30px;" >
+            </td>
+            <td >
+                <input type="submit" value="Submit" style="float:right; background-color: palegreen; width: 80px; height: 30px;" >
+            </td>
+        </tr>    
+    </table>
+    </form>
+</body>
+</html>
